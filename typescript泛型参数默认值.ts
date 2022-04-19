@@ -45,5 +45,5 @@ function create<T extends HTMLElement, U extends T[]>(element?: T, children?: U)
 
 const r1 = create()
 const r2 = create(document.createElement('dialog'))
-const r3 = create(document.createElement('dialog'), document.createElement('div'))
+const r3 = create(document.createElement('dialog'), [document.createElement('div')])
 
